@@ -5,14 +5,14 @@ import { removeFromFavorites } from "../store/actions";
 import { useContext } from "react";
 import { FavoritesContext } from "../store/context";
 import "./NewsCard.css";
-import useLocalStorage from "../utils/hooks/useLocalStorageFavorites";
+import useLocalStorageFavorites from "../utils/hooks/useLocalStorageFavorites";
 
 export function NewsCard(props) {
     //extragem propsurile componentei
     const { newsId, title, description, imgSrc, hasCloseButton } = props;
     //extragem functia de dispatch pt favorite
     const { favoritesDispatch } = useContext(FavoritesContext);
-    const [favoriteNews, setFavoriteNews] = useLocalStorage(
+    const [favoriteNews, setFavoriteNews] = useLocalStorageFavorites(
         "favorites",
         null,
         "REMOVE",

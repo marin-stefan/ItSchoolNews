@@ -5,7 +5,7 @@ import Favorites from "./pages/Favorites";
 import NewsCategory from "./pages/NewsCategory";
 import NewsDetails from "./pages/NewsDetails";
 import { FavoritesContext } from "./store/context";
-import { favoritesReducer, initialState } from "./store/reducer";
+import { favoritesReducer } from "./store/reducer";
 import { useReducer } from "react";
 import useLocalStorageFavorites from "./utils/hooks/useLocalStorageFavorites";
 

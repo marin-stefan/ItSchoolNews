@@ -1,6 +1,5 @@
 // componenta Pagination o sa primeasca 2 props : activePage(pag curenta) si baseUrl(url
 // complet al paginii pe care trebuie sa o deschida)
-
 import { useNavigate } from "react-router-dom";
 import { Pagination } from "react-bootstrap";
 
