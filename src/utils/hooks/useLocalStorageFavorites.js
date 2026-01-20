@@ -5,8 +5,9 @@ export default function useLocalStorageFavorites(key, value, action) {
     // Extragem valoarea din localStorage asociata cheii primite.
     const localStorageItem = localStorage.getItem(key);
     // Parsam valoarea extrasa. Daca aceasta are valoarea null inseamna ca nu exista in localStorage.
-    // Daca nu avem valoare asociata cheii in localStorage, starea initiala va fi valoarea primita ca argument
-    const initialState = JSON.parse(localStorageItem || value);
+    // Daca nu avem valoare asociata cheii in localStorage, starea initiala va fi valoarea primita ca argument sau array gol
+    const initialState = localStorageItem ? JSON.parse(localStorageItem || value) : [] ;
+
     // Initializam state-ul state-ul.
     const [state, setState] = useState(initialState);
 

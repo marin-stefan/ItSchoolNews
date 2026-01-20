@@ -15,7 +15,7 @@ export default function Favorites() {
             <Container className="my-5">
                 <h1 className="mb-5 pt-3">Stirile tale favorite</h1>
                 {/* daca nu avem stiri afisam un mesaj altfel listam stirile */}
-                {news.length === 0 ? (
+                {!news || news.length === 0 ? (
                     <p>Momentan nu ai nici o stire favorita</p>
                 ) : (
                     <NewsCardList newsList={news} />
