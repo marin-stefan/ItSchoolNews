@@ -15,7 +15,7 @@ export function getFormattedDate(dateString) {
 
     // ne asiguram ca ziua si luna vor fi in format de genul: 01, 03, .... 09
     if(month < 10) {
-        month = `0${month}`; // sau facem concatenare "0"+month dar e varianta veche
+        month = `0${month}`; 
     }
 
     if(day<10) {
