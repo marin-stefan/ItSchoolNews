@@ -2,10 +2,12 @@
 // complet al paginii pe care trebuie sa o deschida)
 import { useNavigate } from "react-router-dom";
 import { Pagination } from "react-bootstrap";
+import "./Pagination.css";
 
 export function CustomPagination(props) {
     // facem destructuring la props
-    const { activepage, baseurl } = props;
+    const { baseurl } = props;
+    let { activepage } = props;
     // ca sa pastram aceiasi functionalitate de la componenta Link(fara refresh la pagina) o sa
     // folosim hook-ul de useNavigate din react
     const navigate = useNavigate();
