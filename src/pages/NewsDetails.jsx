@@ -9,7 +9,7 @@ import "./NewsDetails.css";
 import { addToFavorites } from "../store/actions";
 import { useContext, useState } from "react";
 import { FavoritesContext } from "../store/context";
-import Alert from "../utils/CustomAlert";
+import Alert from "../components/CustomAlert"
 import useLocalStorageFavorites from "../utils/hooks/useLocalStorageFavorites";
 
 export default function NewsDetails() {
