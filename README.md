@@ -44,6 +44,8 @@ State Management: React Context API
 
 API: The Guardian API
 
+## Website is live on: https://marin-stefan-itschool-news-reactapp.netlify.app
+
 ## Author
 
 Marin Stefan Daniel
